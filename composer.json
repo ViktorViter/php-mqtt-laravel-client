@@ -1,5 +1,5 @@
 {
-  "name": "php-mqtt/laravel-client",
+  "name": "viktor-viter/php-mqtt-laravel-client",
   "description": "A wrapper for the php-mqtt/client library for Laravel.",
   "type": "library",
   "keywords": [
@@ -22,11 +22,17 @@
     "php": "^7.4|^8.0",
     "illuminate/config": "~7.0|~8.0",
     "illuminate/support": "~7.0|~8.0",
-    "php-mqtt/client": "^1.0"
+    "viktor-viter/php-mqtt-client": "^1.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.5"
   },
+  "repositories": [
+    {
+      "url": "https://github.com/ViktorViter/mqtt-php-client.git",
+      "type": "git"
+    }
+  ],
   "autoload": {
     "psr-4": {
       "PhpMqtt\\Client\\": "src"
